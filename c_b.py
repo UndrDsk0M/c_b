@@ -94,12 +94,12 @@ def circle(name: str = None, pos: tuple[int, int, int] = (0, 0, 0), size: int = 
             "type": "object",}
 circle.__doc__ = __creating_doc__.format('circle', 'create a', "circle", "")
 
-def sphere(name: str = None, pos: tuple[int, int, int] = (0, 0, 0), size: int = 3, style: str = "uv") -> dict:
+def sphere(name: str = None, pos: tuple[int, int, int] = (0, 0, 0), size: int = 3, radius: int = 1, style: str = "uv") -> dict:
     """Create a sphere(3D_circle) object and saving in a verible *Tip: have two style*"""
     if style == "ico":
-        bpy.ops.mesh.primitive_ico_sphere_add(size=size, location=pos)
+        bpy.ops.mesh.primitive_ico_sphere_add(radius=radius, location=pos)
     else :
-        bpy.ops.mesh.primitive_uv_sphere_add(size=size, location=pos)
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=radius, location=pos)
 
     object_ = bpy.context.active_object
     if name : 
@@ -155,5 +155,3 @@ def remove(target: object|str = "all"):
     else :
         bpy.data.objects.remove(target['object'], do_unlink=True)
 remove.__doc__ = __removing_doc__.format('remove', 'delete', "object you selected")
-
-

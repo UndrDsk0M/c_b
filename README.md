@@ -3,7 +3,7 @@
 + Do you work with blender? 
 - that perfect tool for 3d modeling?
 + Yes exaclly! how should i learn writing python codes in that? 
-+ the python code are to long and hard to remmember :(
++ the bpy python codes are to long and hard to remmember :(
 - Dont be worry look what i have found! c_b!
 
  C_B, this cute face can make your job so much faster than past 
