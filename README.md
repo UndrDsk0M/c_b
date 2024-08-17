@@ -37,10 +37,49 @@ remove('all')
 ![image](https://github.com/user-attachments/assets/36d53ea3-e043-47a1-ada4-d3c3d0ffe09a)
 
 
+### how about documention? oh you can use python help, github help, and telegram channel t.me/EHSAN_VK 
+```python
+print(help(cube))
+
+# this will be the output
+"""
+
+This function create [cube] 
+| Inputs:
+| |
+| | name(str): the name that you want give to your object ( it can be none, blender will give it a name)
+| | size(int): size of object. defualt=3 Tip: (it prefer to use scale if available)
+| | pos(int, int, int): the location or position of the object
+| | rotat(float, float, float): rotation (x dir, y dir, z dir)
+| | scale(int, int, int): make bigger, smaller. changes the size
+
+| | 
+| |
+| |Tip: in most cases both float and int are accept_____________________
+|
+| Outputs:
+| |
+| | type of the output is a dict, that include a blender object and type of object
+| | these information can be usefull if you want to work with that later so keep them in a verible
+| |______________________________________________________________________________________________
+|                    
+|                    
+|  c_b (custom_blender.py :] ) 
+|  press q to quit
+|____________________|
+    
+"""
+```
+
 ## if you dont know blender and just python, its very simple to undrstand the simple things and coding
 you can use print(help(cube)) to see the every func doc
 
 it will have a huge update with minimum size, be ready for it!
+
+v-0.0.2 update aded:
++ better documenting
++ rotation & scale 
+
 featurs :
 + adding object by one line
 + creating function return that object so you will not lose your time in select and find the object
